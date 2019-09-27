@@ -10,4 +10,4 @@ In your file from last class,
 	b) class (e.g. .my_class1, .my_class2)
 	c) id (e.g. #myId, #AnotherID)
 4) In your css file, change text colors, resize photos, font style
-5) Once finished, push your files to your GitHub repo.
+5) Once finished, shtup your files on github
