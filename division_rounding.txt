@@ -1,0 +1,13 @@
+In order to divide properly in Ruby, you must denote a decimal with either the divisor or the dividend.
+4.0/2.0 == 2.0
+5.0/2 == 2.5
+10 / 3.0 == 3.333333...
+
+
+Often, when we multiply or divide numbers in Ruby, we are left with a bunch of digits trailing the decimal point. Here’s how to fix that up:
+Template: “%.xf” % number
+
+
+E.g.  To round to 2 decimal places: 
+money = 2.903
+print “I have %.2f” % money → I have 2.90 
