@@ -7,7 +7,7 @@ until full_name.include?(" ") do
 	print "Invalid name. Try again: "
 	full_name = gets.chomp
 end
-fields[0] = full_name
+fields[0] = "Full name: #{full_name}"
 
 print "Enter your email: "
 email = gets.chomp
@@ -23,7 +23,7 @@ until email_confirm == email do
 	print "That doesn't match. Try again: "
 	email_confirm = gets.chomp
 end
-fields[1] = email
+fields[1] = "Email: #{email}"
 
 print "Enter your username: "
 username = gets.chomp
@@ -33,7 +33,7 @@ while username.length < 8 || username.length > 16 || username.include?(" ")
 	username = gets.chomp
 end
 puts "Username: #{username}"
-fields[2] = username
+fields[2] = "Username: #{username}"
 
 print "Enter your password: " 
 password = gets.chomp
@@ -44,7 +44,7 @@ while password.length < 12 || password.downcase == password
 end
 
 puts "Password: #{password}"
-fields[3] = password
+fields[3] = "Password: #{password}"
 
 puts "You have successfully registered!"
 puts "Your fields are: "
