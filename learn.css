@@ -1,0 +1,38 @@
+html {
+	/* rgb- red, green, blue - values range from 0-255 */
+	background-color: rgb(255, 255, 255);
+	color:red;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 40px;
+	font-style: italic;
+}
+
+h2 {
+	color: rgb(0, 0, 255);
+}
+
+.first_class.second_class {
+	font-style: sans-serif;
+}
+
+.first_class {
+	color: yellow;
+}
+
+.second_class {
+	color: purple;
+}
+
+#my_paragraph {
+	font-size: 20px;
+	color: blue
+}
+
+#lime_pic {
+	width: 100px;
+	height: 100px;
+}
+
