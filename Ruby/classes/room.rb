@@ -16,3 +16,57 @@
 # Exercise 2: Create an object called classroom using your
 # Room class. The classroom needs 1 exit, a description and
 # roomID (or name) called "classroom"
+
+class Room
+
+	def initialize(roomName, description)
+		@roomName = roomName
+		@exits = {}
+		@description = description
+	end
+
+	def getName
+		return @roomName
+	end
+
+	def getDesc
+		return @description
+	end
+
+	def setExits(nExit, eExit, sExit, wExit)
+		exits = {
+			"north" => nExit,
+			"east" => eExit,
+			"south" => sExit,
+			"west" => wExit
+		}
+	end
+end
+
+class Person
+
+	def initialize(room)
+		@currentRoom = room
+	end
+
+	def go(exit)
+		@currentRoom = exit
+	end
+
+	def getRoom
+		return @currentRoom
+	end
+end
+
+classRoom = Room.new("Classroom", "An empty classroom")
+outside = Room.new("Outside", "The great outdoors")
+
+classRoom.setExits(nil, nil, outside, nil)
+outside.setExits(classRoom, nil, nil, nil)
+
+person = Person.new(classRoom)
+puts person.getRoom.getName
+person.go(outside)
+puts person.getRoom.getName
+
+
