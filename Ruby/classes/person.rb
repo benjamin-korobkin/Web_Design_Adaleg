@@ -17,9 +17,9 @@ class Person
 	# 	return @height
 	# end
 
-	def grade=(grade)
-		@grade = grade
-	end
+# 	def grade=(grade)
+# 		@grade = grade
+# 	end
 
 	# attr_reader acts as your 'getters'
 	# attr_reader :weight, :height
