@@ -51,3 +51,21 @@ puts "Bow removed..."
 puts "Inventory:\n#{bob.getItems}"
 puts "Bob has the hammer: #{bob.hasItem(hammer)}"
 puts "Bob has the bow: #{bob.hasItem(bow)}"
+
+# If done correctly, this code will print the following:
+# Inventory:
+# Hammer: A strong hammer
+# Bow: Flexible and agile
+# Bob has the hammer: true
+# Bob has the bow: true
+# *****************
+# Hammer removed...
+# Inventory:
+# Bow: Flexible and agile
+# Bob has the hammer: false
+# Bob has the bow: true
+# *****************
+# Bow removed...
+# Inventory:
+# Bob has the hammer: false
+# Bob has the bow: false
