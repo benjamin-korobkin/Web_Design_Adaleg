@@ -19,7 +19,7 @@ class Room
 
 	def nextRoom(direction)
 		# TODO: Explain to BJ how you think
-		# this method works
+		# this method works.
 		return @exits[direction]
 	end
 end
